@@ -1,0 +1,99 @@
+    body{
+        background-color: #222;
+    }
+  
+  #container{
+     
+      max-width: 1024px;
+      margin: auto;
+  }
+
+  #monitor{
+      background: #000;
+      position: relative;
+      border-top: 3px solid #888;
+      margin: 5%;
+      padding: 2% 2% 4% 2%;
+      border-radius: 10px;
+      border-bottom-left-radius: 50% 2%;
+      border-bottom-right-radius: 50% 2%;
+      box-shadow: 1px 1px 40px rgb(236, 143, 255);
+      
+  }
+
+ 
+  #monitor:after{
+    content: none;
+    display: block;
+    position: absolute;
+    bottom: 3%;
+    left: 36%;
+    height: .5%;
+    width: 28%;
+    background: #ddd;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 0 white;
+  }
+
+  #monitorDisplay{
+      position: relative;
+      background-color: #777;
+      background-size: cover;
+      background-position: top center;
+        height: 0; 
+        padding-bottom: 56.25%; 
+        position: relative;
+        overflow: hidden;
+  }
+
+  .night{
+    height: 55vh ;
+    width: auto;
+    border: 1px solid black;
+    
+    background-image: url("image/Img_1.png");
+    position: relative;
+    background-size: cover;
+    box-shadow: 1px 2px 60px rgb(0, 0, 0);
+    overflow-x: hidden;
+  }
+
+  .surface{
+    height: 140px;
+    width: 500%;
+    background-image: url("image/Img_02.png");
+    display: block;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    background-repeat: repeat-x;
+    animation: road 6s linear infinite;
+
+}
+
+@keyframes road {
+    100%{
+        transform: translateX(-3000px);
+    }
+}
+.car{
+    background-image: url("image/Img_06.png");
+    position: absolute;
+    bottom: 8.5%;
+    left: 24%;
+    animation: ca 1s linear infinite;
+}
+
+@keyframes ca{
+    100%{
+        transform: translateY(-1px);
+    }
+
+    50%{
+        transform: translateY(2px);        
+    }
+
+    0%{
+        transform: translateY(-1px);
+    }
+}
